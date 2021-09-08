@@ -1,0 +1,25 @@
+## HEADER
+header.js
+
+## API
+api/core.js
+api/machine.js
+api/config.js
+
+## BLOCKS
+# MACHINES
+blocks/machines/tfe.js
+blocks/machines/lpu.js
+blocks/machines/pfg.js
+blocks/machines/waterc.js
+blocks/machines/test.js
+
+
+# SIMPLE
+blocks/frame.js
+blocks/liquidCable.js
+
+
+## ITEMS
+items/plastic.js
+items/slime.js
