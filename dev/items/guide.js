@@ -1,8 +1,8 @@
-IDRegistry.genItemID("manual");
-Item.createItem("manual", "Industrial Foregoing's Manual", {name: "book_manual", meta: 0}, {stack: 1});
+IDRegistry.genItemID("ifmanual");
+Item.createItem("ifmanual", "Industrial Foregoing's Manual", {name: "book_manual", meta: 0}, {stack: 1});
 
 
-GuideAPI.registerGuide("manual", { 
+GuideAPI.registerGuide("ifmanual", { 
 item: ItemID.manual, 
 debug: false, 
 textures: { 
