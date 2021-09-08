@@ -1,5 +1,5 @@
 IDRegistry.genItemID("manual");
-Item.createItem("manual", "Manual", {name: "book_manual", meta: 0}, {stack: 1});
+Item.createItem("manual", "Industrial Foregoing's Manual", {name: "book_manual", meta: 0}, {stack: 1});
 
 
 GuideAPI.registerGuide("manual", { 

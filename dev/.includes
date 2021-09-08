@@ -8,6 +8,7 @@ api/config.js
 
 ## BLOCKS
 # MACHINES
+
 blocks/machines/tfe.js
 blocks/machines/lpu.js
 blocks/machines/pfg.js
@@ -16,11 +17,13 @@ blocks/machines/test.js
 
 
 # SIMPLE
+
 blocks/frame.js
 blocks/liquidCable.js
 
 
 ## ITEMS
+
 items/plastic.js
 items/slime.js
 item/guide.js
