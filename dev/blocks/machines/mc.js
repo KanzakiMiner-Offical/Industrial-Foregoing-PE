@@ -28,15 +28,15 @@ var guiMC = new UI.StandartWindow({
 		"textAmount": {type: "text", x: 500, y: 230, width: 300, height: 30, text: "0 mB"},
 		
 		"progressScale": {type: "scale", x: 450, y: 150, direction: 0, value: .5, bitmap: "4", scale: 0.75},
-		"scaleLiquid": {type: "scale", x: 520, y: 150, direction: 1, value: 0.5, bitmap: "gui_water_scale", overlay: "gui_liquid_storage_overlay", scale: GUI_SCALE},
+		"scaleLiquid": {type: "scale", x: 505, y: 150, direction: 1, value: 0.5, bitmap: "gui_water_scale", overlay: "gui_liquid_storage_overlay", scale: GUI_SCALE},
 		"slotLiquid1": {type: "slot", x: 550, y: 280, isValid: function(id, count, data){
             return LiquidLib.getFullItem(id, data, "essence") ? true : false;
         }},
         
 		"slotLiquid2": {type: "slot", x: 550, y: 150, isValid: function(){return false;}},
-		"slotOutput0": {type: "slot", x: 630, y: 130, size: 60},
-		"slotOutput1": {type: "slot", x: 630, y: 190, size: 60},
-       "energyScale": {type: "scale", x: 700, y: 135, direction: 1, value: .5, bitmap: "rf_scale_full", scale: GUI_SCALE}
+		"slotOutput0": {type: "slot", x: 700, y: 130, size: 60},
+		"slotOutput1": {type: "slot", x: 700, y: 190, size: 60},
+       "energyScale": {type: "scale", x: 800, y: 135, direction: 1, value: .5, bitmap: "rf_scale_full", scale: GUI_SCALE}
 	}
 });
 var VanillaMobs = [
@@ -153,7 +153,7 @@ MachineRegistry.registerElectricMachine(BlockID.mob_crusher, {
 		      if(ENTITY_ARR[i] === ent){
         this.data.progress += 1/this.data.work_time;
         if(this.data.progress >= 1){
-				Entity.damageEntity(ENTITY_ARR, 300);
+				Entity.damageEntity(ENTITY_ARR, 350);
 				this.data.energy -= this.data.energy_consumption;
 				this.data.progress = 0;
                 this.liquidStorage.addLiquid("essence", 0.5);
@@ -174,8 +174,8 @@ MachineRegistry.registerElectricMachine(BlockID.mob_crusher, {
             break;
         }
     }
-    return false
-} 
+    return false;
+}
 
 	putItem: function(item){
         for(var i = 0; i < 2; i++){
