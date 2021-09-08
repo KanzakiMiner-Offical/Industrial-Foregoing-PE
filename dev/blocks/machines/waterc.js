@@ -66,8 +66,8 @@ MachineRegistry.registerPrototype(BlockID.water_conden, {
 		if(World.getBlockID(this.x+1,this.y,this.z)==9 || World.getBlockID(this.x-1,this.y,this.z)==9 || World.getBlockID(this.x,this.y,this.z+1)==9 || World.getBlockID(this.x,this.y,this.z-1)==9){
 			newActive = true;
 			this.data.progress ++;
-			this.container.setScale("progressScale", this.data.progress / 10);
-			if(this.data.progress >= 10){
+			this.container.setScale("progressScale", this.data.progress / 50);
+			if(this.data.progress >= 50){
 				this.liquidStorage.addLiquid("water", 0.1);
 				this.data.progress = 0;
 			}
@@ -75,8 +75,8 @@ MachineRegistry.registerPrototype(BlockID.water_conden, {
 		else {
 			newActive = true;
 			this.data.progress ++;
-			this.container.setScale("progressScale", this.data.progress / 40);
-			if(this.data.progress >= 40){
+			this.container.setScale("progressScale", this.data.progress / 120);
+			if(this.data.progress >= 120){
 				this.liquidStorage.addLiquid("water", 0.01);
 				this.data.progress = 0;
 			}

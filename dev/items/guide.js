@@ -16,7 +16,7 @@ close: "cancel",
 
 
 pages: {
-          "first": {
+      "first": {
                 preLink: "first",
                 nextLink: "first",
                 left: {
@@ -40,13 +40,13 @@ pages: {
                     {text: "================", size: 23},
                     {text: "Generators", size: 27, link: "gen"},  
                     {text: "================", size: 23},
-                    {text: "Comming Soon", size: 27),    
+                    {text: "Comming Soon", size: 27},    
                     {text: "================", size: 23},
                     ]
                 }
             },
-             // GS
-          "gs": {
+  
+        "gs": {
                 preLink: "first",    	
                 nextLink: "gs",
                 left: {
@@ -68,10 +68,7 @@ pages: {
                         ]
                 }
             },
-            
-                        
-
-           "tfe": {
+       "tfe": {
             	preLink: "gs",    	
                 nextLink: "lpu",
                 left: {
@@ -108,8 +105,7 @@ pages: {
                     elements: []
                  }
              },
-
-             "lpu": {
+          "lpu": {
             	preLink: "gs",    	
                 nextLink: "gs",
                 left: {
@@ -136,7 +132,7 @@ pages: {
                      materials: {
                       "a": {id: 1, data: 0},
                       "#": {id: 331, data: 0},
-                      "z": {id: BlockID.machineFrame., data: 0},
+                      "z": {id: BlockID.machineFrame, data: 0},
                       "i": {id: ItemID.gear_iron, data: 0},
  
                      },
@@ -146,28 +142,28 @@ pages: {
                      elements: []
                      }
                  },
- 
-             "gen": {
-            	preLink: "gs",    	
-                nextLink: "pfg",
-                left: {
-                    controller: PageControllers.ITEM_PAGE,
-
-                    elements: [
-                    {text: "Coming soon......", size: 24},
-                    ]
-                },
-                
-                right: {
-                    controller: PageControllers.BASIC_PAGE,
-                    elements: [
-                    {text: "Comming Soon", size: 27),    
-                    {text: "Petrified Fuel Generator", size: 25, link: "pfg"},
-                    ]
-                }
+          "gen": {
+               preLink: "gs",
+               nextLink: "pfg",
+               left: {
+                 controller: PageControllers.ITEM_PAGE,
+     
+                 elements: [
+                   { text: "Coming soon......", size: 24 },
+                         ]
+               },
+     
+               right: {
+                 controller: PageControllers.BASIC_PAGE,
+                 elements: [
+                   {
+                     text: "Comming Soon",
+                     size: 27},
+                   { text: "Petrified Fuel Generator", size: 25, link: "pfg" },
+                         ]
+               }
              },
-
-           "pfg": {
+      "pfg": {
             	preLink: "gen",    	
                 nextLink: "gen",
                 left: {
@@ -206,7 +202,7 @@ pages: {
  elements: [
  ],
  }
-},
+}
 
    }
 });

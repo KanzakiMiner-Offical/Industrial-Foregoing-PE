@@ -23,3 +23,4 @@ blocks/liquidCable.js
 ## ITEMS
 items/plastic.js
 items/slime.js
+item/guide.js
