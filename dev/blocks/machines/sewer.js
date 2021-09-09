@@ -133,7 +133,7 @@ MachineRegistry.registerElectricMachine(BlockID.sewer, {
 
     for (i in SewerAccept) {
       var SA = SewerAccept[i];
-      let SEWER_ARR = Entity.getAllInRange(this.x + scanZ, this.y + scanY, this.z + scanZ, 1);
+      let SEWER_ARR = Entity.getAllInRange(this.x + this.data.scanX, this.y + this.data.scanY, this.z + this.data.scanZ, 1);
 
       for (let i in SEWER_ARR) {
         if (SEWER_ARR[i] === SA) {

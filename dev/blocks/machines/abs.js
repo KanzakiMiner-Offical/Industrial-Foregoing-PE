@@ -68,9 +68,9 @@ MachineRegistry.registerElectricMachine(BlockID.mob_crusher, {
     maxX: 0,
     maxY: 1,
     maxZ: 0,
-    scanZ: 0,
+    scanX: 0,
     scanY: 0,
-    scanX: 0
+    scanZ: 0
   },
 
   getGuiScreen: function() {
@@ -112,7 +112,7 @@ MachineRegistry.registerElectricMachine(BlockID.mob_crusher, {
 
     for (i in AnimalGrow) {
       var AG = AnimalGrow[i];
-      let ANIMAL_ARR = Entity.getAllInRange(this.x + scanZ, this.y + scanY, this.z + scanZ, 0);
+      let ANIMAL_ARR = Entity.getAllInRange(this.x + this.data.scanX, this.y + this.data.scanY, this.z + this.data.scanZ, 0);
 
       for (let i in ANIMAL_ARR) {
         if (ENTITY_ARR[i] === AG) {

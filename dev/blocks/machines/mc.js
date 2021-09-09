@@ -148,7 +148,7 @@ MachineRegistry.registerElectricMachine(BlockID.mob_crusher, {
         
       for(let c in VanillaMobs){
 		var ent = VanillaMobs[c];
-		  let ENTITY_ARR = Entity.getAllInRange(this.x + scanZ, this.y + scanY, this.z + scanZ, 0);
+		  let ENTITY_ARR = Entity.getAllInRange(this.x + this.data.scanX, this.y + this.data.scanY, this.z + this.data.scanZ, 0);
 		    for (let i in ENTITY_ARR) {
 		      if(ENTITY_ARR[i] === ent){
         this.data.progress += 1/this.data.work_time;
