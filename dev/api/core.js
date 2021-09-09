@@ -39,9 +39,13 @@ IFCore.Gear("diamond", "Diamond", "#33cccc");
 IDRegistry.genItemID("latexBucket");
 Item.createItem("latexBucket", "Latex Bucket", { name: "latexBucket", meta: 0 }, { stack: 1 });
 IDRegistry.genItemID("essenceBucket");
-Item.createItem("essenceBucket", "essence Bucket", { name: "essenceBucket", meta: 0 }, { stack: 1 });
+Item.createItem("essenceBucket", "Essence Bucket", { name: "essenceBucket", meta: 0 }, { stack: 1 });
+IDRegistry.genItemID("sewageBucker");
+Item.createItem("sewageBucker", "Sewage Bucket", { name: "sewageBucker", meta: 0 }, { stack: 1 });
 
 
+LiquidRegistry.registerLiquid("sewage", "Sewage", ["sewage_flow", "sewage_still"]);
+LiquidLib.registerItem("sewage", VanillaItemID.bucket, ItemID.sewageBucker, 1000);
 LiquidRegistry.registerLiquid("latex", "Latex", ["latex_flow", "latex_still"]);
 LiquidLib.registerItem("latex", VanillaItemID.bucket, ItemID.latexBucket, 1000);
 LiquidRegistry.registerLiquid("essence", "Esssence", ["essence_flow", "essence_still"]);
@@ -135,4 +139,9 @@ var animalSelector = {
   side: "animal_independence_selector_side",
   front: "animal_independence_selector_front",
   back: "animal_independence_selector_back"
+}
+
+var sewer = {
+  side: "sewer_side",
+  top: "sewer_"
 }

@@ -53,15 +53,15 @@ MachineRegistry.registerPrototype(BlockID.tree_extrac, {
 	
 	addLiquidToItem: MachineRegistry.addLiquidToItem,
 	
-    tick: function(){
+  tick: function(){
 		StorageInterface.checkHoppers(this);
 		
 		var newActive = false;
 		if(World.getBlockID(this.x,this.y,this.z+1)==17 || World.getBlockID(this.x,this.y,this.z+1)==162){
 			newActive = true;
 			this.data.progress ++;
-			if(this.data.progress >= 100){
-				this.liquidStorage.addLiquid("latex", 1);
+			if(this.data.progress >= 1000){
+				this.liquidStorage.addLiquid("latex", 0.2);
 				this.data.progress = 0;
 				World.destroyBlock(this.x,this.y,this.z+1, false);
 			}
