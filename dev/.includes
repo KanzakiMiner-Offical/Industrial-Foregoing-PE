@@ -18,7 +18,10 @@ blocks/machines/bht.js
 blocks/machines/bhu.js
 blocks/machines/lf.js
 blocks/machines/abs.js
-
+blocks/machines/sewer.js
+blocks/machines/scomposter.js
+blocks/machines/bplacer.js
+blocks/machines/bbreaker.js
 
 # SIMPLE
 
@@ -30,4 +33,5 @@ blocks/liquidCable.js
 
 items/plastic.js
 items/slime.js
-item/guide.js
+items/guide.js
+items/fertilizer.js

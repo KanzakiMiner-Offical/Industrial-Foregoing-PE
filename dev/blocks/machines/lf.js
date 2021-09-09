@@ -47,8 +47,8 @@ MachineRegistry.registerElectricMachine(BlockID.lava_fabricator, {
 	defaultValues:{
 		power_tier: 1,
 		energy_storage: 20000,
-		energy_consumption: 50000,
-		work_time: 10,
+		energy_consumption: 5000,
+		work_time: 100,
 		progress: 0,
 		isActive: false,
 		//run: false,
