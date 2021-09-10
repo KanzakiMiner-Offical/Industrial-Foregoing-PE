@@ -31,7 +31,7 @@ const guiBHT = new UI.StandartWindow({
   TileEntity.registerPrototype(BlockID.black_hole_tank, {
 
       getGuiScreen: function() {
-        return guiBHU;
+        return guiBHT;
       },
 
       init: function() {

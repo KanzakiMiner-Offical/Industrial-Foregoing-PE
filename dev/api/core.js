@@ -143,5 +143,5 @@ var animalSelector = {
 
 var sewer = {
   side: "sewer_side",
-  top: "sewer_"
+  top: "sewer_top"
 }

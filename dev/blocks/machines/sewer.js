@@ -51,7 +51,6 @@ var guiSewer = new UI.StandartWindow({
       x: 550,
       y: 280,
       isValid: function(id, count, data) {
-
         return LiquidLib.getFullItem(id, data, "sewage") ? true : false;
       }
     },
@@ -114,7 +113,7 @@ MachineRegistry.registerElectricMachine(BlockID.sewer, {
 
     this.container.setScale("energyScale", this.data.energy / energyStorage);
     this.container.setScale("progressScale", this.data.progress);
-    this.liquidStorage.updateUiScale("scaleLatex", "latex");
+    this.liquidStorage.updateUiScale("scaleLatex", "sewage");
   },
 
   scan: function() {

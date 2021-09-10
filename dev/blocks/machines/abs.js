@@ -74,7 +74,7 @@ MachineRegistry.registerElectricMachine(BlockID.mob_crusher, {
   },
 
   getGuiScreen: function() {
-    return guiMC;
+    return guiABS;
   },
 
   getTier: function() {

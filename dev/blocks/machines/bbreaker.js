@@ -45,7 +45,7 @@ MachineRegistry.registerElectricMachine(BlockID.block_destroyer, {
   },
 
   getGuiScreen: function() {
-    return guiBP;
+    return guiBD;
   },
 
   tick: function() {
