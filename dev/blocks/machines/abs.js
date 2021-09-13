@@ -53,7 +53,7 @@ var guiABS = new UI.StandartWindow({
   }
 });
 
-MachineRegistry.registerElectricMachine(BlockID.mob_crusher, {
+MachineRegistry.registerElectricMachine(BlockID.animalSelector, {
 
   defaultValues: {
 

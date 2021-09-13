@@ -39,18 +39,17 @@ const guiBHU = new UI.StandartWindow({
   },
 
   elements: {
-    "slot": { type: "slot", x: 500, y: 135 },
+    "slot": { type: "slot", x: 500, y: 105 },
     "slotInput": { type: "slot", x: 500, y: 195 },
-    "slotOutput": { type: "slot", x: 560, y: 195 },
+    "slotOutput": { type: "slot", x: 600, y: 195 },
     "name": { type: "text", x: 680, y: 100, text: "Null" },
-    "count": { type: "text", x: 680, y: 120, text: "0" },
-    "limit": { type: "text", x: 680, y: 140, text: "" }
+    "count": { type: "text", x: 680, y: 120, text: "Count: 0" },
+    "limit": { type: "text", x: 680, y: 140, text: "Limit" }
   }
 });
 
 TileEntity.registerPrototype(BlockID.black_hole_unit, {
   defaultValues: {
-    name: "Null",
     id: 0,
     count: 0,
     data: 0
@@ -62,7 +61,7 @@ TileEntity.registerPrototype(BlockID.black_hole_unit, {
 
   tick: function() {
 
-    this.container.setText("name", this.data.name);
+    this.container.setText("name", this.data.id);
     this.container.setText("count", this.data.count + "");
 
     if (this.data.id && this.data.count === 0) {

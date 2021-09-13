@@ -14,8 +14,6 @@ blocks/machines/lpu.js
 blocks/machines/pfg.js
 blocks/machines/waterc.js
 blocks/machines/mc.js
-blocks/machines/bht.js
-blocks/machines/bhu.js
 blocks/machines/lf.js
 blocks/machines/abs.js
 blocks/machines/sewer.js

@@ -41,7 +41,7 @@ var guiSewer = new UI.StandartWindow({
   },
   drawing: [
     { type: "scale", x: 530, y: 138, direction: 0, bitmap: "progress_background", scale: 3.2, value: 1 },
-    { type: "scale", x: 700, y: 130, direction: 0, bitmap: "rf_scale", scale: 3.2, value: 1 }
+    { type: "scale", x: 601, y: 130, direction: 0, bitmap: "rf_scale", scale: 3.2, value: 1 }
     ],
   elements: {
     "scaleSewage": { type: "scale", x: 420, y: 150, direction: 1, value: 0.5, bitmap: "gui_water_scale", overlay: "gui_liquid_storage_overlay", scale: GUI_SCALE },
@@ -56,7 +56,7 @@ var guiSewer = new UI.StandartWindow({
     },
 
     "slot2": { type: "slot", x: 550, y: 150, isValid: function() { return false; } },
-    "energyScale": { type: "scale", x: 700, y: 130, direction: 0, bitmap: "rf_scale_full", scale: 3.2, value: 1 },
+    "energyScale": { type: "scale", x: 600, y: 130, direction: 0, bitmap: "rf_scale_full", scale: 3.2, value: 1 },
     "progressScale": { type: "scale", x: 500, y: 138, direction: 0, bitmap: "progress_background", scale: 3.2, value: 1 }
   }
 });
@@ -113,7 +113,7 @@ MachineRegistry.registerElectricMachine(BlockID.sewer, {
 
     this.container.setScale("energyScale", this.data.energy / energyStorage);
     this.container.setScale("progressScale", this.data.progress);
-    this.liquidStorage.updateUiScale("scaleLatex", "sewage");
+    this.liquidStorage.updateUiScale("scaleSewage", "sewage");
   },
 
   scan: function() {
