@@ -43,8 +43,8 @@ var guiABS = new UI.StandartWindow({
     inventory: { standart: true }
   },
   drawing: [
-    { type: "scale", x: 530, y: 138, direction: 0, bitmap: "progress_background", scale: 3.2, value: 1 },
-    { type: "scale", x: 700, y: 130, direction: 0, bitmap: "rf_scale", scale: 3.2, value: 1 }
+    { type: "scale", x: 530, y: 138, direction: 0, bitmap: "progress_background", scale: 3.2 },
+    { type: "scale", x: 700, y: 130, direction: 0, bitmap: "rf_scale", scale: 3.2 }
     ],
   elements: {
 

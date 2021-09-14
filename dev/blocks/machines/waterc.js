@@ -26,7 +26,7 @@ var guiWC = new UI.StandartWindow({
 	},
 
 	drawing: [
-	{type: "image", x: 480, y: 350, bitmap: "3", scale: 0.75},
+	{type: "scale", x: 480, y: 350, bitmap: "3", scale: 0.75},
 	],
 
 	elements: {

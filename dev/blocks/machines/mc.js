@@ -22,7 +22,7 @@ var guiMC = new UI.StandartWindow({
   },
 
   drawing: [
-    { type: "bitmap", x: 700, y: 135, bitmap: "rf_scale", scale: GUI_SCALE },
+    { type: "bitmap", x: 700, y: 135, bitmap: "rf_scale", scale: 3.2 },
     { type: "bitmap", x: 449, y: 149, bitmap: "3", scale: 0.75 }
 	],
 

@@ -47,7 +47,7 @@ var guiSC = new UI.StandartWindow({
     },
     "slotSewage1": { type: "slot", x: 350, y: 185, isValid: function() { return false; } },
 
-    "energyScale": { type: "scale", x: 660, y: 135, direction: 1, value: .5, bitmap: "rf_scale_full", scale: 3.2 }
+    "energyScale": { type: "scale", x: 660, y: 135, direction: 1, value: 1, bitmap: "rf_scale_full", scale: 3.2 }
   }
 });
 

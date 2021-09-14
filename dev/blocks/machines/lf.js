@@ -120,9 +120,9 @@ MachineRegistry.registerElectricMachine(BlockID.lava_fabricator, {
   energyReceive: MachineRegistry.basicEnergyReceiveFunc
 });
 
-TileRenderer.setRotationPlaceFunction(BlockID.tree_extrac, true);
+TileRenderer.setRotationPlaceFunction(BlockID.lava_fabricator, true);
 
-StorageInterface.createInterface(BlockID.tree_extrac, {
+StorageInterface.createInterface(BlockID.lava_fabricator, {
   slots: {
     "slotLava0": { input: true },
     "slotLava1": { output: true }
